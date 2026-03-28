@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Counter</title>
+
   <style>
     body {
       background-color: black;
@@ -28,21 +29,23 @@
       margin: 10px;
     }
 
-    /* ✅ FIXED BUTTON ALIGNMENT */
+    /* ✅ PERFECT BUTTON ALIGNMENT */
     #buttons {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 15px;
-      margin-top: 20px;
+      gap: 20px;
+      flex-wrap: nowrap; /* 🔥 prevents breaking */
     }
 
     button {
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
+      white-space: nowrap; /* 🔥 prevents text wrapping */
     }
 
+    /* hide clear initially */
     #clear {
       display: none;
     }
@@ -57,7 +60,7 @@
 
   <p id="error">Error : Cannot go below 0</p>
 
-  <!-- ✅ BUTTONS IN ONE ROW -->
+  <!-- ✅ ALL BUTTONS INSIDE ONE FLEX CONTAINER -->
   <div id="buttons">
     <button id="decrement">Decrement</button>
     <button id="increment">Increment</button>
@@ -65,5 +68,6 @@
   </div>
 
   <script src="script.js"></script>
+
 </body>
 </html>
