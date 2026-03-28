@@ -11,9 +11,9 @@ const clearBtn = document.getElementById("clear");
 function updateUI() {
   countEl.innerHTML = count;
 
-  // ✅ Show clear only if count > 1 (as required)
+  // Show clear button only when count > 1
   if (count > 1) {
-    clearBtn.style.display = "block";
+    clearBtn.style.display = "inline-block";
   } else {
     clearBtn.style.display = "none";
   }
@@ -44,5 +44,5 @@ clearBtn.addEventListener("click", function () {
   updateUI();
 });
 
-// Initial render
+// Initial UI
 updateUI();
