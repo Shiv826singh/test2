@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    #count {
+      font-size: 30px;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding: 5px 20px;
+    }
+
+    #error {
+      color: red;
+      display: none;
+      margin: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    #clear {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Counter using HTML</h1>
+
+  <p>Your Current Count is : <span id="count">0</span></p>
+
+  <p id="error">Error : Cannot go below 0</p>
+
+  <button id="decrement">Decrement</button>
+  <button id="increment">Increment</button>
+  <button id="clear">Clear</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
