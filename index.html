@@ -28,10 +28,19 @@
       margin: 10px;
     }
 
+    /* ✅ FIXED BUTTON ALIGNMENT */
+    #buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
     button {
       padding: 10px 20px;
-      margin: 10px;
       font-size: 16px;
+      cursor: pointer;
     }
 
     #clear {
@@ -48,9 +57,12 @@
 
   <p id="error">Error : Cannot go below 0</p>
 
-  <button id="decrement">Decrement</button>
-  <button id="increment">Increment</button>
-  <button id="clear">Clear</button>
+  <!-- ✅ BUTTONS IN ONE ROW -->
+  <div id="buttons">
+    <button id="decrement">Decrement</button>
+    <button id="increment">Increment</button>
+    <button id="clear">Clear</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
