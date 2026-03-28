@@ -11,7 +11,7 @@ const clearBtn = document.getElementById("clear");
 function updateUI() {
   countEl.innerHTML = count;
 
-  // Show clear button ONLY if count > 1 (as per requirement)
+  // ✅ Show clear only if count > 1 (as required)
   if (count > 1) {
     clearBtn.style.display = "block";
   } else {
